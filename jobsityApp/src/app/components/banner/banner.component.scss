@@ -1,0 +1,35 @@
+.banner {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #f2f2f2;
+  }
+  
+  .banner h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .banner h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .banner h3 {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .banner button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .banner button:hover {
+    background-color: #555;
+  }
+  

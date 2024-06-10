@@ -1,0 +1,43 @@
+.program {
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .program h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  
+  .columns {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .column {
+    width: 30%;
+  }
+  
+  .column h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .column p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .column button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .column button:hover {
+    background-color: #555;
+  }
+  

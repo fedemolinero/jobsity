@@ -5,7 +5,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { ProgramComponent } from './components/program/program.component';
 import { SectionComponent } from './components/section/section.component';
-import { ColumnsComponent } from './components/columns/columns.component';
 
 @Component({
   selector: 'app-root',
@@ -18,7 +17,6 @@ import { ColumnsComponent } from './components/columns/columns.component';
     BannerComponent,
     ProgramComponent,
     SectionComponent,
-    ColumnsComponent
     
   ],
   templateUrl: './app.component.html',
