@@ -1,4 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
-
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
+
+/* Importing Fonts. */
+
+@font-face {
+    font-family: 'IntroRustG-Base2Line';
+    src: url('/assets/fonts/IntroRustG-Base2Line.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'MinionPro-Regular';
+    src: url('/assets/fonts/MinionPro-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Intro';
+    src: url('/assets/fonts/Intro.otf') format('opentype');
+}
+
+/* Fonts Settings */
+
+body {
+    font-family: 'Intro', sans-serif; 
+}
+
+.intro-rust {
+    font-family: 'IntroRustG-Base2Line', sans-serif;
+}
+
+.minion-pro {
+    font-family: 'MinionPro-Regular', serif;
+}
