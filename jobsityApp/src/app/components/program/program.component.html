@@ -1,21 +1,162 @@
 <div class="program">
-    <h2>PROGRAMS</h2>
-    <div class="columns">
-      <div class="column">
-        <h3>Basic</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget nisl vel massa tincidunt tempor.</p>
-        <button>REGISTRATION</button>
+
+  <div class="title d-flex justify-content-center">
+    <fa-icon class="m-1 p-1" [icon]="faStar"></fa-icon>
+    <h1 class="intro-rust">PROGRAMS</h1>
+    <fa-icon class="m-1 p-1" [icon]="faStar"></fa-icon>
+  </div>
+
+  <div class="title m-1 p-1">
+    <p class="minion-pro">We share their experience and professional barista championships multiple winners</p>
+  </div>
+
+  <div class="container mt-5">
+    <ul class="nav d-flex justify-content-center">
+      <li class="nav-item" [class.active]="activeItem === 'basic'" (click)="setActive('basic')">
+        <a class="nav-link" href="#">BASIC</a>
+        <div class="active-indicator"></div>
+      </li>
+      <li class="nav-item" [class.active]="activeItem === 'premium'" (click)="setActive('premium')">
+        <a class="nav-link" href="#">PREMIUM</a>
+        <div class="active-indicator"></div>
+      </li>
+      <li class="nav-item" [class.active]="activeItem === 'platinum'" (click)="setActive('platinum')">
+        <a class="nav-link" href="#">PLATINUM</a>
+        <div class="active-indicator"></div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row">
+
+      <div class="col-md-6 d-flex align-items-center justify-content-center">
+
+        <img src="../../../assets/background.jpg" alt="Your Image" class="img-fluid">
+
       </div>
-      <div class="column">
-        <h3>Premium</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget nisl vel massa tincidunt tempor.</p>
-        <button>REGISTRATION</button>
+
+      <div class="col-md-6">
+
+        <h2 class="minion-pro">Beginners Course</h2>
+
+        <div class="">
+          <fa-icon class="m-1 p-1" [icon]="faClock"></fa-icon>
+          <span class="minion-pro">Certificate</span>
+        </div>
+
+        <div class="">
+          <fa-icon class="m-1 p-1" [icon]="faCalendar"></fa-icon>
+          <span class="minion-pro">240 minets</span>
+        </div>
+
+        <h1 class="minion-pro">1500 usd</h1>
+
+        <button class="btn btn-primary btn-block mt-3">Registration</button>
+
       </div>
-      <div class="column">
-        <h3>Platinum</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget nisl vel massa tincidunt tempor.</p>
-        <button>REGISTRATION</button>
+
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-4">
+        <table class="table custom-table">
+          <thead>
+            <tr>
+              <th class="text-bottom">Title 1</th>
+            </tr>
+          </thead>
+          <tbody class="minion-pro">
+            <tr>
+              <td>- <small>fedejh kjahdsfkjh akj askljdhas dkljha flkjfh</small></td>
+            </tr>
+            <tr>
+              <td>- <small>fedejh kjahdsfkjh akj askljdhas dkljha skljdha sdkjfha sdlkjfha flkjfh</small></td>
+            </tr>
+            <tr>
+              <td>- <small>fedejh kjahdsfkjh akj askljdhas dkljha skljdha sdkjfha sdlkjfha flkjfh</small></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-4">
+        <table class="table custom-table">
+          <thead>
+            <tr>
+              <th class="text-bottom">Title 1</th>
+            </tr>
+          </thead>
+          <tbody class="minion-pro">
+            <tr>
+              <td>- <small>fedejh kjahdsfkjh akj askljdhas dkljha flkjfh</small></td>
+            </tr>
+            <tr>
+              <td>- <small>fedejh kjahdsfkjh akj askljdhas dkljha skljdha sdkjfha sdlkjfha flkjfh</small></td>
+            </tr>
+            <tr>
+              <td>- <small>fedejh kjahdsfkjh akj askljdhas dkljha skljdha sdkjfha sdlkjfha flkjfh</small></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-4">
+        <table class="table custom-table">
+          <thead>
+            <tr>
+              <th class="text-bottom">Title 1</th>
+            </tr>
+          </thead>
+          <tbody class="minion-pro">
+            <tr>
+              <td>- <small>fedejh kjahdsfkjh akj askljdhas dkljha flkjfh</small></td>
+            </tr>
+            <tr>
+              <td>- <small>fedejh kjahdsfkjh akj askljdhas dkljha skljdha sdkjfha sdlkjfha flkjfh</small></td>
+            </tr>
+            <tr>
+              <td>- <small>fedejh kjahdsfkjh akj askljdhas dkljha skljdha sdkjfha sdlkjfha flkjfh</small></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
-  
+
+  <div class="container">
+    <div class="row">
+      <div class="col-7">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th scope="row">
+                <fa-icon class="m-1 p-1" [icon]="faIconCheck"></fa-icon>
+              </th>
+              <td>
+                best cofee in the world of the mundo
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <fa-icon class="m-1 p-1" [icon]="faIconCheck"></fa-icon>
+              </th>
+              <td>
+                best cofee in the world of the mundo
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <fa-icon class="m-1 p-1" [icon]="faIconCheck"></fa-icon>
+              </th>
+              <td>
+                best cofee in the world of the mundo
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</div>

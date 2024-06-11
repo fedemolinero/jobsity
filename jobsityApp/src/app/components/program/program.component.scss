@@ -41,3 +41,50 @@
     background-color: #555;
   }
   
+
+  .nav-item {
+    position: relative;
+    margin-right: 20px;
+}
+
+.nav-item .active-indicator {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    display: none;
+}
+
+.nav-item.active .active-indicator {
+    display: block;
+}
+
+
+
+
+
+/* Asegúrate de que los encabezados estén alineados al fondo de la celda y en mayúsculas */
+th.text-bottom {
+  vertical-align: bottom;
+  text-transform: uppercase;
+  padding-bottom: 15px; /* Ajusta según sea necesario */
+}
+
+
+.custom-table th,
+.custom-table td {
+  border: none;
+}
+
+/* Añadir un borde superior a cada celda del encabezado */
+.custom-table th {
+  border-top: 3px solid black;
+  background-color: white; /* Opcional: asegúrate de que el fondo sea blanco para cubrir posibles espacios */
+}
+
+.custom-table td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
