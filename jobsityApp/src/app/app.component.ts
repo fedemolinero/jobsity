@@ -4,6 +4,11 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { ProgramComponent } from './components/program/program.component';
+import { QuestionsComponent } from './components/questions/questions.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
+import { InfoComponent } from './components/info/info.component';
+import { TestimonialsComponent } from './components/testimonials/testimonials.component';
+import { OurpartnersComponent } from './components/ourpartners/ourpartners.component';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +21,11 @@ import { ProgramComponent } from './components/program/program.component';
     HeaderComponent,
     BannerComponent,
     ProgramComponent,
-
+    QuestionsComponent,
+    GalleryComponent,
+    InfoComponent,
+    TestimonialsComponent,
+    OurpartnersComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
