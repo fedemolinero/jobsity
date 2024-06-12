@@ -4,7 +4,6 @@
   background-repeat: no-repeat;
   background-position: center center;
   width: 100%;
-  padding: 20px;
 }
 
 
@@ -40,4 +39,23 @@
   width: 100%;
   padding: 20px;
   opacity: 0.7;
+}
+
+
+
+.image-container {
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+  height: 10vh; /* Opcional: ajusta la altura según tu diseño */
+}
+
+.image-container {
+  max-width: 100%; /* La imagen no superará el ancho máximo del contenedor */
+  height: auto; /* La altura se ajustará automáticamente según el ancho */
+}
+
+.flex-image {
+  max-width: 100%; /* La imagen no superará el ancho máximo del contenedor */
+  height: auto; /* La altura se ajustará automáticamente según el ancho */
 }

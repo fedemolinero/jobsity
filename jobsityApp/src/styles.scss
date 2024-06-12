@@ -37,7 +37,7 @@ body {
 }
 
 .app-title {
-    color:white;
+    color: white;
     font-family: 'IntroRustG-Base2Line', sans-serif;
     font-size: 3rem;
 }
@@ -48,7 +48,7 @@ body {
 }
 
 .app-subtitle {
-    color:white;
+    color: white;
     font-family: 'MinionPro-Regular', sans-serif;
     font-size: 1rem;
 }
@@ -114,4 +114,11 @@ body {
 
 .font3 {
     font-size: 3rem;
+}
+
+
+.banner-with-divider {
+    overflow: hidden;
+    background-image: url('./assets/mask-banner-down.png');
+    background-size:cover;
 }
