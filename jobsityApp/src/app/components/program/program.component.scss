@@ -4,9 +4,11 @@
 }
 
 
+// tabs
 .nav-item {
   position: relative;
   margin-right: 20px;
+
 }
 
 .nav-item .active-indicator {
@@ -23,46 +25,48 @@
   display: block;
 }
 
-
-
-
-
-/* Asegúrate de que los encabezados estén alineados al fondo de la celda y en mayúsculas */
-th.text-bottom {
-  vertical-align: bottom;
-  text-transform: uppercase;
-  padding-bottom: 15px;
-  /* Ajusta según sea necesario */
-}
-
-
-.custom-table th,
-.custom-table td {
-  border: none;
-}
-
-/* Añadir un borde superior a cada celda del encabezado */
-.custom-table th {
-  border-top: 3px solid black;
-  background-color: white;
-  /* Opcional: asegúrate de que el fondo sea blanco para cubrir posibles espacios */
-}
-
-.custom-table td {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.padded-4 {
-  padding: 1rem;
-  margin:1rem;
-}
-
 .nav-tabs .nav-item .nav-link {
   cursor: pointer;
 }
 
-.nav-tabs .nav-item .active .nav-link {
-  font-weight: bold;
-  border-bottom: 2px solid #007bff;
+
+
+
+// padding
+.padded-4 {
+  padding: 1rem;
+  margin: 1rem;
 }
+
+
+
+//table
+.coffee-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.coffee-table th,
+.coffee-table td {
+  border: none;
+  padding: 0.5rem;
+  text-align: left;
+  position: relative;
+}
+
+.coffee-table th.intro {
+  text-align: left;
+  vertical-align: bottom;
+  font-weight: bold;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+.coffee-table th {
+  border-top: 1px solid black;
+}
+
+.coffee-table td {
+  color: #485260;
+}
+
