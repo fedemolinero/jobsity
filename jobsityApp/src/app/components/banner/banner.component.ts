@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faChevronCircleDown, faStar } from '@fortawesome/free-solid-svg-icons';
+import { faChevronCircleDown, faChevronDown, faStar } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-banner',
@@ -10,6 +10,6 @@ import { faChevronCircleDown, faStar } from '@fortawesome/free-solid-svg-icons';
   styleUrl: './banner.component.scss'
 })
 export class BannerComponent {
-  faChevronCircleDown = faChevronCircleDown;
+  faChevronDown = faChevronDown;
   faStar = faStar;
 }

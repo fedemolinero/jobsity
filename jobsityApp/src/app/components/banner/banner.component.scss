@@ -1,55 +1,58 @@
-.banner {
-  text-align: center;
-  padding: 100px ;
-}
-
-.banner h2 {
-  color: white;
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.banner h1 {
-  color: white;
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-
-.banner h3 {
-  color: white;
-  font-size: 18px;
-  margin-bottom: 30px;
-}
-
-.navbar-text {
-  font-size: 1rem;
-  margin-left: 20px;
-}
-
-.downButton {
-  font-size: 3rem;
-}
-
 .star-divider {
   font-size: 1rem;
-  padding:20px;
   color: #cdb47b
 }
 
 .triangle-divider {
   width: 0;
   height: 0;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  border-right: 100px solid #cdb47b;
-  margin-top: 10px; /* Ajusta para centrar verticalmente si es necesario */
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  border-right: 80px solid #cdb47b;
+  margin-top: 10px;
 }
 
 .triangle-divider-inverted {
   width: 0;
   height: 0;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  border-left: 100px solid #cdb47b;
-  margin-top: 10px; /* Ajusta para centrar verticalmente si es necesario */
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  border-left: 80px solid #cdb47b;
+  margin-top: 10px;
+}
+
+.innerTitle {
+  padding-top: 0.5rem;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.customColor {
+  color: #cdb47b !important;
+}
+
+.orange-point {
+  width: 5px;
+  height: 5px;
+  background-color: #cdb47b;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.downButton {
+  font-size: 2rem;
+}
+
+.circle-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 5rem;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  color: #cdb47b;
 }
