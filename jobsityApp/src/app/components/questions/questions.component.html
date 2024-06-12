@@ -1,31 +1,38 @@
-<div class="container-fluid">
-    <div class="row">
-
-        <div class="col-5 wrapper">
+<div class="container-fluid pt-5 pb-5">
+    <div class="row pb-3">
+        <div class="col-4 wrapper pb-5">
         </div>
-
-        <div class="col-7 wrapper">
-
-            <div class="d-flex justify-content-start">
-                <div class="app-title-black">HAVE QUESTIONS?</div>
+        <div class="col-8 wrapper">
+            <div class="d-flex justify-content-start separator pt-2">
+                <div class="app-title-black ">HAVE QUESTIONS?</div>
             </div>
-
-            <div class="d-flex justify-content-start">
+            <div class="d-flex justify-content-start minion-pro ">
                 <p>Leave a request and we will contact you shortly</p>
             </div>
+            <div class="row pt-5 pb-5">
 
-            <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
-                <div class="form-group">
-                    <input placeholder="YOUR NAME" type="text" class="form-control p-2 m-2" id="name"
-                        formControlName="name">
-                </div>
-                <div class="form-group">
-                    <input placeholder="CONTACT NUMBER" type="text" class="form-control p-2 m-2" id="contactNumber"
-                        formControlName="contactNumber">
-                </div>
-                <button type="submit" class="btn btn-primary">Send</button>
-            </form>
+                <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group">
+                                <input placeholder="YOUR NAME" type="text" class="form-control intro customFormField"
+                                    id="name" formControlName="name">
+                            </div>
+                            <div class="form-group">
+                                <input placeholder="CONTACT NUMBER" type="text"
+                                    class="form-control intro customFormField" id="contactNumber"
+                                    formControlName="contactNumber">
+                            </div>
+                        </div>
+                        <div class="col-6 d-flex align-items-end p-3">
+                            <button type="submit"
+                                class="btn btn-outline-dark customBtn w-100 btn-lg btn-block intro p-3">SEND</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
         </div>
-
     </div>
 </div>
