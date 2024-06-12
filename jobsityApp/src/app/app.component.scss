@@ -23,6 +23,7 @@
   background-position: bottom right;
   width: 100%;
   padding: 20px;
+  background-color: #f1f1f1;
 }
 
 
@@ -45,17 +46,17 @@
 
 .image-container {
   display: flex;
-  justify-content: center; /* Centra los elementos horizontalmente */
-  align-items: center; /* Centra los elementos verticalmente */
-  height: 10vh; /* Opcional: ajusta la altura según tu diseño */
+  justify-content: center;
+  align-items: center; 
+  height: 10vh; 
 }
 
 .image-container {
-  max-width: 100%; /* La imagen no superará el ancho máximo del contenedor */
-  height: auto; /* La altura se ajustará automáticamente según el ancho */
+  max-width: 100%;
+  height: auto; 
 }
 
 .flex-image {
-  max-width: 100%; /* La imagen no superará el ancho máximo del contenedor */
-  height: auto; /* La altura se ajustará automáticamente según el ancho */
+  max-width: 100%; 
+  height: auto; 
 }
