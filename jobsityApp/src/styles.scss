@@ -29,6 +29,12 @@ body {
     // font-family: 'MinionPro-Regular', sans-serif; 
 }
 
+.app-title {
+    color:white;
+    font-family: 'IntroRustG-Base2Line', sans-serif;
+    font-size: 3rem;
+}
+
 .intro {
     font-family: 'Intro', sans-serif;
 }
@@ -47,6 +53,10 @@ body {
 
 .padded-bottom-1 {
     padding-bottom: 1rem;
+}
+
+.padded-bottom-2 {
+    padding-bottom: 2rem;
 }
 
 .padded-top-1 {
