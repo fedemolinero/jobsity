@@ -35,6 +35,17 @@ body {
     font-size: 3rem;
 }
 
+.app-title-black {
+    font-family: 'IntroRustG-Base2Line', sans-serif;
+    font-size: 3rem;
+}
+
+.app-subtitle {
+    color:white;
+    font-family: 'MinionPro-Regular', sans-serif;
+    font-size: 1rem;
+}
+
 .intro {
     font-family: 'Intro', sans-serif;
 }
@@ -78,4 +89,10 @@ body {
 .wrapper2 {
     padding-left: 10rem;
     padding-right: 10rem;
+}
+
+
+.wrapper3 {
+    padding-bottom: 5rem;
+    padding-top: 5rem;
 }
