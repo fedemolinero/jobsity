@@ -12,51 +12,30 @@
     </p>
   </div>
 
-  <div class="container mt-5">
-    <ul class="nav d-flex justify-content-center">
-      <li class="nav-item" [class.active]="activeItem === 'basic'" (click)="setActive('basic')">
-        <a class="nav-link" href="#">BASIC</a>
+  <div>
+    <ul class="nav nav-tabs d-flex justify-content-center align-items-center">
+      <li class="nav-item" (click)="selectTab(1)" [class.active]="selectedTab === 1">
+        <a class="nav-link intro p-5">BASIC</a>
         <div class="active-indicator"></div>
       </li>
-      <li class="nav-item" [class.active]="activeItem === 'premium'" (click)="setActive('premium')">
-        <a class="nav-link" href="#">PREMIUM</a>
+      <li class="nav-item" (click)="selectTab(2)" [class.active]="selectedTab === 2">
+        <a class="nav-link intro p-5">PREMIUM</a>
         <div class="active-indicator"></div>
       </li>
-      <li class="nav-item" [class.active]="activeItem === 'platinum'" (click)="setActive('platinum')">
-        <a class="nav-link" href="#">PLATINUM</a>
+      <li class="nav-item" (click)="selectTab(3)" [class.active]="selectedTab === 3">
+        <a class="nav-link intro p-5">PLATINUM</a>
         <div class="active-indicator"></div>
       </li>
     </ul>
-  </div>
 
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-md-6 d-flex align-items-center justify-content-center">
-        <img src="../../../assets/background.jpg" alt="Your Image" class="img-fluid">
-      </div>
-
-      <div class="col-md-6">
-
-        <h2 class="minion-pro">Beginners Course</h2>
-
-        <div class="">
-          <fa-icon class="m-1 p-1" [icon]="faClock"></fa-icon>
-          <span class="minion-pro">Certificate</span>
-        </div>
-
-        <div class="">
-          <fa-icon class="m-1 p-1" [icon]="faCalendar"></fa-icon>
-          <span class="minion-pro">240 minets</span>
-        </div>
-
-        <h1 class="minion-pro">1500 usd</h1>
-
-        <button class="btn btn-primary btn-block mt-3">Registration</button>
-
-      </div>
-
+    <div [ngSwitch]="selectedTab">
+      <app-tab1 *ngSwitchCase="1"></app-tab1>
+      <app-tab2 *ngSwitchCase="2"></app-tab2>
+      <app-tab3 *ngSwitchCase="3"></app-tab3>
     </div>
   </div>
+
+
 
   <div class="container mt-5">
     <div class="row">

@@ -23,6 +23,13 @@
     src: url('/assets/fonts/Intro.otf') format('opentype');
 }
 
+@font-face {
+    font-family: 'playfair';
+    src: url('/assets/fonts/PlayfairDisplay-Medium.ttf') format('truetype');
+}
+
+
+
 /* Fonts Settings */
 body {
     font-family: 'Montserrat', sans-serif;
@@ -48,6 +55,10 @@ body {
 
 .intro {
     font-family: 'Intro', sans-serif;
+}
+
+.playfair {
+    font-family: 'playfair', sans-serif;
 }
 
 .intro-rust {
@@ -91,8 +102,16 @@ body {
     padding-right: 10rem;
 }
 
-
 .wrapper3 {
     padding-bottom: 5rem;
     padding-top: 5rem;
+}
+
+
+.font2 {
+    font-size: 2rem;
+}
+
+.font3 {
+    font-size: 3rem;
 }
