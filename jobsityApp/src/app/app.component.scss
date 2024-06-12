@@ -1,3 +1,13 @@
 .section {
     padding: 50px;
 }
+
+.fullScreen {
+    background-image: url('../assets/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    padding: 20px;
+    // height: 100vh;
+  }

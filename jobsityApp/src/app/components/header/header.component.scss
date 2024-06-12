@@ -1,17 +1,18 @@
-/* styles.scss */
-.navbar-nav .nav-item {
-  position: relative;
-  display: inline-block;
+.navbar-nav .nav-link.active {
+  border-bottom: 3px solid orange;
 }
 
-.nav-link {
-  color: white;
-  margin-left: 20px;
-  /* Añade espacio antes de los puntos */
+@media (max-width: 768px) {
+  .navbar-nav {
+    margin-top: 10px;
+  }
 }
 
-.navbar-text {
-  color: white;
-  font-size: 1rem;
-  margin-left: 20px;
+.logoclass {
+  height: 80px;
+}
+
+.navMain {
+  border-bottom: 1px solid grey;
+
 }

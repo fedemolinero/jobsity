@@ -25,7 +25,7 @@ import { OurpartnersComponent } from './components/ourpartners/ourpartners.compo
     GalleryComponent,
     InfoComponent,
     TestimonialsComponent,
-    OurpartnersComponent
+    OurpartnersComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
