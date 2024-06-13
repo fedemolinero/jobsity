@@ -1,31 +1,67 @@
 import { Component } from '@angular/core';
-import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { CarouselModule } from 'primeng/carousel';
 
 @Component({
   selector: 'app-gallery',
   standalone: true,
-  imports: [CarouselModule],
+  imports: [CarouselModule, FontAwesomeModule],
   templateUrl: './gallery.component.html',
   styleUrl: './gallery.component.scss'
 })
 export class GalleryComponent {
-  
-  customOptions: OwlOptions = {
-    center: true,
-    items: 2,
-    loop: true,
-    dots: false,
-    autoHeight: true,
-    autoWidth: true,
-    margin: 20,
-    autoplay: true,
-    rtl: true,
-    skip_validateItems: true,
-    navSpeed: 700,
-    responsive: {
-      600: {
-        items: 4
+  faBars = faBars;
+
+  products: any | undefined =
+    [
+      {
+        id: '1',
+        name: 'Altbee',
+        url: '../../../assets/img-carousel.jpg'
+      },
+      {
+        id: '2',
+        name: 'Altbee',
+        url: '../../../assets/img-carousel.jpg'
+      }, {
+        id: '3',
+        name: 'baden_baden',
+        url: '../../../assets/img-carousel.jpg'
+      },
+      {
+        id: '4',
+        name: 'abajour_logo',
+        url: '../../../assets/img-carousel.jpg'
+      }, {
+        id: '5',
+        name: 'Altbee',
+        url: '../../../assets/img-carousel.jpg'
+      },
+      {
+        id: '6',
+        name: 'Altbee',
+        url: '../../../assets/img-carousel.jpg'
       }
+
+    ]
+
+  responsiveOptions: any[] | undefined = [
+    {
+      breakpoint: '1199px',
+      numVisible: 1,
+      numScroll: 1
+    },
+    {
+      breakpoint: '991px',
+      numVisible: 2,
+      numScroll: 1
+    },
+    {
+      breakpoint: '767px',
+      numVisible: 1,
+      numScroll: 1
     }
-  }
+  ];
+
 }

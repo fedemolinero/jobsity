@@ -11,7 +11,7 @@ import { CarouselModule } from 'primeng/carousel';
   styleUrl: './ourpartners.component.scss'
 })
 
-export class OurpartnersComponent implements OnInit {
+export class OurpartnersComponent  {
   products: any | undefined =
     [
       {
@@ -45,31 +45,27 @@ export class OurpartnersComponent implements OnInit {
 
     ]
 
-  responsiveOptions: any[] | undefined;
+  responsiveOptions: any[] | undefined = [
+    {
+      breakpoint: '1199px',
+      numVisible: 1,
+      numScroll: 1
+    },
+    {
+      breakpoint: '991px',
+      numVisible: 2,
+      numScroll: 1
+    },
+    {
+      breakpoint: '767px',
+      numVisible: 1,
+      numScroll: 1
+    }
+  ];
 
   faBars = faBars;
 
   constructor() { }
 
-  ngOnInit() {
-
-    this.responsiveOptions = [
-      {
-        breakpoint: '1199px',
-        numVisible: 1,
-        numScroll: 1
-      },
-      {
-        breakpoint: '991px',
-        numVisible: 2,
-        numScroll: 1
-      },
-      {
-        breakpoint: '767px',
-        numVisible: 1,
-        numScroll: 1
-      }
-    ];
-  }
 
 }

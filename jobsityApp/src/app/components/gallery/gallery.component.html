@@ -1,39 +1,32 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="d-flex justify-content-center align-items-center">
+
+        <div class="d-flex justify-content-center align-items-center mt-1 pt-1">
+            <fa-icon class="padded-4 text-white" [icon]="faBars"></fa-icon>
             <div class="app-title">GALLERY</div>
+            <fa-icon class="padded-4 text-white" [icon]="faBars"></fa-icon>
         </div>
+        
         <div class="d-flex justify-content-center align-items-center">
             <div class="app-subtitle">
                 You yourself are testing the taste benefits of each method and select the type of cooking yourself
             </div>
         </div>
     </div>
-</div>
 
-<div class="container-fluid wrapper3">
-    <div class="row">
-        <owl-carousel-o [options]="customOptions">
-            <ng-template carouselSlide>
-                <img src="../../../assets/logo_baden_baden.png">
+    <div class="row pt-5">
+        <p-carousel [value]="products" [numVisible]="5" [numScroll]="1" [circular]="true"
+            [responsiveOptions]="responsiveOptions">
+            <ng-template let-product pTemplate="item">
+                <div class="border-1 surface-border border-round m-2 p-3">
+                    <div class="mb-3">
+                        <div class="relative mx-auto">
+                            <img [src]="product.url" height="400" [alt]="product.name" class="w-full border-round" />
+                        </div>
+                    </div>
+                </div>
             </ng-template>
-            <ng-template carouselSlide>
-                <img src="../../../assets/logo_klass.png">
-            </ng-template>
-            <ng-template carouselSlide>
-                <img src="../../../assets/abajour_logo.png">
-            </ng-template>
-            <ng-template carouselSlide>
-                <img src="../../../assets/gdeburger_logo.png">
-            </ng-template>
-            <ng-template carouselSlide>
-                <img src="../../../assets/dedushka_logo.png">
-            </ng-template>
-            <ng-template carouselSlide>
-                <img src="../../../assets/altbee_logo.png">
-            </ng-template>
-
-        </owl-carousel-o>
-
+        </p-carousel>
     </div>
+
 </div>
