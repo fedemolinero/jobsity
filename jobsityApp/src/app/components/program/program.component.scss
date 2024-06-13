@@ -8,7 +8,6 @@
 .nav-item {
   position: relative;
   margin-right: 20px;
-
 }
 
 .nav-item .active-indicator {
@@ -25,10 +24,17 @@
   display: block;
 }
 
+.nav-item:not(.active) .nav-link {
+  color: #485260; /* Color para los tabs inactivos */
+}
+
+.nav-item.active .nav-link {
+  color: #000000; /* Color para el tab activo */
+}
+
 .nav-tabs .nav-item .nav-link {
   cursor: pointer;
 }
-
 
 
 
@@ -69,4 +75,3 @@
 .coffee-table td {
   color: #485260;
 }
-

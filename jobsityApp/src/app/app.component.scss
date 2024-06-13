@@ -7,23 +7,23 @@
 }
 
 
-.background-form {
-  background-image: url('../assets/background-grains.png');
+.questions {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   width: 100%;
   padding: 20px;
+  background: linear-gradient(to bottom, #f1f1f1, #f6f7f7);
 }
 
 .background-program {
-  background-image: url('../assets/background-program.jpg');
+  background-image: url('../assets/wood-coffee-beans-coffee.png');
   background-size:auto;
   background-repeat: no-repeat;
   background-position: bottom right;
   width: 100%;
   padding: 20px;
-  background-color: #f1f1f1;
+  background: linear-gradient(to bottom, #f1f1f1, #f7f7f7);
 }
 
 
@@ -38,7 +38,6 @@
   background-repeat: no-repeat;
   background-position: center center;
   width: 100%;
-  padding: 20px;
   opacity: 0.7;
 }
 
@@ -60,3 +59,41 @@
   max-width: 100%; 
   height: auto; 
 }
+
+
+
+.banner-with-divider {
+  overflow: hidden;
+  background-image: url('../assets/mask-banner-down.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.gallery-with-divider {
+  overflow: hidden;
+  background-image: url('../assets/mask_gallery-up.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+
+.info-with-divider {
+  overflow: hidden;
+  background-image: url('../assets/mask-info-up.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+
+.info {
+  background-image: url('../assets/background-footer.jpg');
+  background-color: brown;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+}
+
