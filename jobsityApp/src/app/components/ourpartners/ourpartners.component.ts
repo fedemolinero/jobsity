@@ -1,12 +1,75 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faBars, faStar } from '@fortawesome/free-solid-svg-icons';
+import { CarouselModule } from 'primeng/carousel';
 
 @Component({
   selector: 'app-ourpartners',
   standalone: true,
-  imports: [],
+  imports: [CarouselModule, FontAwesomeModule],
   templateUrl: './ourpartners.component.html',
   styleUrl: './ourpartners.component.scss'
 })
-export class OurpartnersComponent {
+
+export class OurpartnersComponent implements OnInit {
+  products: any | undefined =
+    [
+      {
+        id: '1',
+        name: 'Altbee',
+        url: '../../../assets/altbee_logo.png'
+      },
+      {
+        id: '2',
+        name: 'Altbee',
+        url: '../../../assets/logo_klass.png'
+      }, {
+        id: '3',
+        name: 'baden_baden',
+        url: '../../../assets/logo_baden_baden.png'
+      },
+      {
+        id: '4',
+        name: 'abajour_logo',
+        url: '../../../assets/abajour_logo.png'
+      }, {
+        id: '5',
+        name: 'Altbee',
+        url: '../../../assets/gdeburger_logo.png'
+      },
+      {
+        id: '6',
+        name: 'Altbee',
+        url: '../../../assets/dedushka_logo.png'
+      }
+
+    ]
+
+  responsiveOptions: any[] | undefined;
+
+  faBars = faBars;
+
+  constructor() { }
+
+  ngOnInit() {
+
+    this.responsiveOptions = [
+      {
+        breakpoint: '1199px',
+        numVisible: 1,
+        numScroll: 1
+      },
+      {
+        breakpoint: '991px',
+        numVisible: 2,
+        numScroll: 1
+      },
+      {
+        breakpoint: '767px',
+        numVisible: 1,
+        numScroll: 1
+      }
+    ];
+  }
 
 }

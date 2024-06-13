@@ -9,16 +9,15 @@ import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
   styleUrl: './gallery.component.scss'
 })
 export class GalleryComponent {
+  
   customOptions: OwlOptions = {
-    navText: ['PREV', 'NEXT'],
     center: true,
     items: 2,
     loop: true,
-    dots:false,
+    dots: false,
     autoHeight: true,
     autoWidth: true,
     margin: 20,
-    nav: true,
     autoplay: true,
     rtl: true,
     skip_validateItems: true,
