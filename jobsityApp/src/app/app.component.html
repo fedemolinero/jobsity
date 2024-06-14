@@ -1,24 +1,24 @@
-<main class="main">
+<header id="header" class="header">
+  <app-menu></app-menu>
+  <app-header></app-header>
+</header>
 
-  <section class="fullScreen">
-    <app-header></app-header>
+<main id="main" class="main">
+
+  <section id="banner" class="banner">
     <app-banner></app-banner>
-
-    <div class="banner-with-divider">
-      <div class="d-flex align-items-end justify-content-end">
-        <div class="image col-2">
-          <img src="../../../assets/granola.png" class="img-fluid" alt="granola">
-        </div>
+    <div class="d-flex align-items-end justify-content-end">
+      <div class="image col-2">
+        <img src="../../../assets/granola.png" class="img-fluid" alt="granola">
       </div>
     </div>
-
   </section>
 
-  <section class="wrapper background-program">
+  <section id="coffeeProgram" class="coffeeProgram">
     <app-program></app-program>
   </section>
 
-  <section class="gallery">
+  <section id="gallery" class="gallery">
     <div class="gallery-with-divider">
       <div class="d-flex align-items-start justify-content-start">
         <div class="image col-2">
@@ -29,25 +29,23 @@
     <app-gallery class="wrapper3 "></app-gallery>
   </section>
 
-  <section class="wrapper">
+  <section class="testimonials">
     <app-testimonials></app-testimonials>
   </section>
 
-  <section class="wrapper ourpartners">
+  <section class="ourpartners">
     <app-ourpartners></app-ourpartners>
   </section>
 
-  <section class="wrapper questions">
+  <section class="questions">
     <app-questions></app-questions>
   </section>
 
-  <section class="info">
-    <div class="info-with-divider">
+  <footer id="footer" class="footer">
+    <div class="footer-with-divider">
       <img src="../assets/mask-info-up.png" class="img-fluid" alt="granola">
     </div>
     <app-info></app-info>
-  </section>
+  </footer>
 
 </main>
-
-<router-outlet />

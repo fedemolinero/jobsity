@@ -9,6 +9,7 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import { InfoComponent } from './components/info/info.component';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 import { OurpartnersComponent } from './components/ourpartners/ourpartners.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 @Component({
   selector: 'app-root',
@@ -18,6 +19,7 @@ import { OurpartnersComponent } from './components/ourpartners/ourpartners.compo
     RouterOutlet,
 
     // COMPONENTS
+    MenuComponent,
     HeaderComponent,
     BannerComponent,
     ProgramComponent,

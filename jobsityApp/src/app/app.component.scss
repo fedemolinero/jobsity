@@ -1,9 +1,39 @@
-.fullScreen {
+.header {
+  overflow: hidden;
   background-image: url('../assets/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   width: 100%;
+}
+
+.banner {
+  overflow: hidden;
+  background-image: url('../assets/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.cofeeProgram {
+  overflow: hidden;
+  background-image: url('../assets/wood-coffee-beans-coffee.png');
+  background-size:auto;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to bottom, #f1f1f1, #f7f7f7);
+}
+
+.gallery {
+  background-color: #222121;
+  // background-image: url('../assets/background-gallery.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  opacity: 0.7;
 }
 
 
@@ -16,29 +46,11 @@
   background: linear-gradient(to bottom, #f1f1f1, #f6f7f7);
 }
 
-.background-program {
-  background-image: url('../assets/wood-coffee-beans-coffee.png');
-  background-size:auto;
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  width: 100%;
-  padding: 20px;
-  background: linear-gradient(to bottom, #f1f1f1, #f7f7f7);
-}
+
 
 
 .ourpartners {
   background-color: #e4e4e4;
-}
-
-.gallery {
-  background-color: #222121;
-  // background-image: url('../assets/background-gallery.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  width: 100%;
-  opacity: 0.7;
 }
 
 
@@ -62,13 +74,6 @@
 
 
 
-.banner-with-divider {
-  overflow: hidden;
-  background-image: url('../assets/mask-banner-down.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
 
 .gallery-with-divider {
   overflow: hidden;
@@ -79,7 +84,7 @@
 }
 
 
-.info-with-divider {
+.footer-with-divider {
   overflow: hidden;
   background-image: url('../assets/mask-info-up.png');
   background-size: contain;
@@ -88,7 +93,7 @@
 }
 
 
-.info {
+.footer {
   background-image: url('../assets/background-footer.jpg');
   background-color: brown;
   background-size: cover;
