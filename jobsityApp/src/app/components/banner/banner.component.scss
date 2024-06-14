@@ -1,6 +1,6 @@
-.star-divider {
+.stars {
   font-size: 1rem;
-  color: #cdb47b
+  color: #cdb47b;
 }
 
 .triangle-divider {
@@ -9,7 +9,6 @@
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
   border-right: 80px solid #cdb47b;
-  margin-top: 10px;
 }
 
 .triangle-divider-inverted {
@@ -18,16 +17,9 @@
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
   border-left: 80px solid #cdb47b;
-  margin-top: 10px;
 }
 
-.innerTitle {
-  padding-top: 0.5rem;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-.customColor {
+.highlight {
   color: #cdb47b !important;
 }
 
@@ -36,23 +28,18 @@
   height: 5px;
   background-color: #cdb47b;
   border-radius: 50%;
-  margin-left: 5px;
-  margin-right: 5px;
 }
 
-.downButton {
-  font-size: 2rem;
+
+
+.shape-divider-container {
+  position: relative;
+  width: 100%;
+  background:
+    url('../../../assets/mask-banner-down.png') no-repeat bottom/contain,
 }
 
-.circle-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 5rem;
-  height: 5rem;
-  border: 1px solid #ccc;
-  border-radius: 50%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  color: #cdb47b;
+.content {
+  position: relative;
+  z-index: 1;
 }
