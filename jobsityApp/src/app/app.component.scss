@@ -25,20 +25,10 @@
 }
 
 .gallery {
-  background-color: #222121;
+  background-image: url('../assets/background-gallery.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  width: 100%;
-  opacity: 0.7;
-}
-
-.gallery-with-divider {
-  overflow: hidden;
-  background-image: url('../assets/mask_gallery-up.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top;
 }
 
 

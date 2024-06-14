@@ -1,29 +1,28 @@
-<div class="d-flex justify-content-center align-items-center mt-1 pt-1">
-    <div class="app-title-black">TESTIMONIALS</div>
-</div>
+<div class="d-flex flex-column justify-content-center align-items-center p-5 m-5">
 
-<div class="d-flex justify-content-center align-items-center pb-5">
-    <div class="app-subtitle text-black">
+    <h1 class="intro-rust mb-0">TESTIMONIALS</h1>
+
+    <h6 class="minion p-5 mb-0">
         We have enough patience to teach you the art of coffee
-    </div>
+    </h6>
+
+    <p-carousel [value]="products" [numVisible]="1" [numScroll]="1" [circular]="true"
+        [responsiveOptions]="responsiveOptions">
+        <ng-template let-product pTemplate="item">
+            <div class="d-flex flex-column align-items-center align-items-center">
+
+                <img [src]="product.url" [alt]="product.name" class="border-round w-25 p-4" />
+
+                <h5 class="mb-0 intro p-3">
+                    {{ product.name }}
+                </h5>
+
+                <h6 class="minion col-4 p-4 text-center">
+                    {{ product.info }}
+                </h6>
+
+            </div>
+        </ng-template>
+    </p-carousel>
+
 </div>
-
-
-<p-carousel [value]="products" [numVisible]="1" [numScroll]="1" [circular]="true"
-    [responsiveOptions]="responsiveOptions">
-    <ng-template let-product pTemplate="item">
-        <div class="border-1 d-flex flex-column align-items-center align-items-center surface-border border-round m-2 p-3">
-            <div class="mb-3">
-                <div class="relative mx-auto">
-                    <img [src]="product.url" [alt]="product.name" class="w-full border-round" />
-                </div>
-            </div>
-            <div class="mb-3 font-medium intro">
-                {{ product.name }}
-            </div>
-            <div class="mb-5 mr-5 ml-5 p-5 minion">
-                {{ product.info }}
-            </div>
-        </div>
-    </ng-template>
-</p-carousel>
