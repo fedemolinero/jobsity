@@ -15,20 +15,17 @@
   background-position: bottom;
 }
 
-.cofeeProgram {
+.coffeeProgram {
   overflow: hidden;
-  background-image: url('../assets/wood-coffee-beans-coffee.png');
-  background-size:auto;
+  background-size: auto;
   background-repeat: no-repeat;
   background-position: bottom right;
-  width: 100%;
-  padding: 20px;
-  background: linear-gradient(to bottom, #f1f1f1, #f7f7f7);
+  // background-image: url('../assets/wood-coffee-beans-coffee.png');
+  background: linear-gradient(to bottom, #f6f6f6, #f7f7f7);
 }
 
 .gallery {
   background-color: #222121;
-  // background-image: url('../assets/background-gallery.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -81,11 +78,11 @@
 .image-container {
   display: flex;
   justify-content: center;
-  align-items: center; 
-  height: 10vh; 
+  align-items: center;
+  height: 10vh;
 }
 
 .flex-image {
-  max-width: 100%; 
-  height: auto; 
+  max-width: 100%;
+  height: auto;
 }
