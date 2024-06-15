@@ -31,6 +31,11 @@
   background-position: center center;
 }
 
+.testimonials {
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+}
+
 
 .questions {
   background-size: cover;
@@ -43,6 +48,10 @@
 
 .ourpartners {
   background-color: #e4e4e4;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+
+
 }
 
 
@@ -57,7 +66,7 @@
 
 .footer-with-divider {
   overflow: hidden;
-  background-image: url('../assets/mask-info-up.png');
+  background-image: url('../assets/masks/mask-info-up.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top;

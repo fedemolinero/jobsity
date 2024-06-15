@@ -11,36 +11,36 @@ import { CarouselModule } from 'primeng/carousel';
   styleUrl: './ourpartners.component.scss'
 })
 
-export class OurpartnersComponent  {
+export class OurpartnersComponent {
   products: any | undefined =
     [
       {
         id: '1',
         name: 'Altbee',
-        url: '../../../assets/altbee_logo.png'
+        url: '../../../assets/logos/altbee_logo.png'
       },
       {
         id: '2',
         name: 'Altbee',
-        url: '../../../assets/logo_klass.png'
+        url: '../../../assets/logos/logo_klass.png'
       }, {
         id: '3',
         name: 'baden_baden',
-        url: '../../../assets/logo_baden_baden.png'
+        url: '../../../assets/logos/logo_baden_baden.png'
       },
       {
         id: '4',
         name: 'abajour_logo',
-        url: '../../../assets/abajour_logo.png'
+        url: '../../../assets/logos/abajour_logo.png'
       }, {
         id: '5',
         name: 'Altbee',
-        url: '../../../assets/gdeburger_logo.png'
+        url: '../../../assets/logos/gdeburger_logo.png'
       },
       {
         id: '6',
         name: 'Altbee',
-        url: '../../../assets/dedushka_logo.png'
+        url: '../../../assets/logos/dedushka_logo.png'
       }
 
     ]
