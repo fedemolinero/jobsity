@@ -66,10 +66,12 @@
 
 .footer-with-divider {
   overflow: hidden;
-  background-image: url('../assets/masks/mask-info-up.png');
-  background-size: contain;
+  background-image: url("../assets/masks/mask-info-up.png");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
+  min-height: 1rem;
+  width: 100%;
 }
 
 
